@@ -7,7 +7,7 @@ app.use(express.json());
   
 // also call the databse connection
 
-const PORT=3000;
+const PORT=8000;
 app.listen(PORT, () => console.log(`Server is running successfully on PORT ${PORT}`));
 app.use("/",route);
 

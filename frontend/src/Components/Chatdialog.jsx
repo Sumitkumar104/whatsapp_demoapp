@@ -1,5 +1,8 @@
 import React from 'react'
 import { Dialog, styled, Box } from '@mui/material';
+// import Conversation from './Conversation';
+import Conversation from './leftpart/Conversation';
+import EmptyChat from './rightpart/emptychat';
 
 // components
 // import Menu from './menu/Menu';
@@ -9,11 +12,11 @@ import { Dialog, styled, Box } from '@mui/material';
 const Component = styled(Box)`
     display: flex;
 `;
-    
+
 const LeftComponent = styled(Box)`
     min-width: 450px;
 `;
-    
+
 const RightComponent = styled(Box)`
     width: 73%;
     min-width: 300px;
@@ -35,26 +38,26 @@ const dialogStyle = {
 function Chatdialog() {
 
     // const {person}={};
-  return (
-    <Dialog 
-    open={true} 
-    BackdropProps={{style: {backgroundColor: 'unset'}}}
-    PaperProps={{ sx: dialogStyle }}
-    maxWidth={'md'}
->
-    <Component>
-        <LeftComponent>
-            {/* <Menu/> */}
-        </LeftComponent>
-        <RightComponent>
-            {
-                // Object.keys(person).length  ? <ChatBox/> : <EmptyChat />
-            }
-        </RightComponent>
-    </Component>
-</Dialog>
-   
-  )
+    return (
+        <Dialog
+            open={true}
+            BackdropProps={{ style: { backgroundColor: 'unset' } }}
+            PaperProps={{ sx: dialogStyle }}
+            maxWidth={'md'}
+        >
+            <Component>
+                <LeftComponent>                 
+                    <Conversation/>
+                </LeftComponent>
+
+                <RightComponent>
+                    <EmptyChat/>
+                </RightComponent>
+                
+            </Component>
+        </Dialog>
+
+    )
 }
 
 export default Chatdialog

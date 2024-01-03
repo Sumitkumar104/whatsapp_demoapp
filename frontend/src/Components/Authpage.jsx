@@ -16,4 +16,6 @@ export default Authpage
 // when user click on sign up button then  we call the adduser function
 // const clickhandlerforsignup= async (data)={
 //     await adduser(data);
+
+// show a pop up which contain user is successfully created login with same details and redirect it tos sign in page.
 // }

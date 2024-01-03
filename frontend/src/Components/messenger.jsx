@@ -1,5 +1,5 @@
 import React from 'react'
-import { AppBar, Toolbar, styled, Box } from '@mui/material';
+import { AppBar, styled, Box } from '@mui/material';
 import Chatdialog from './Chatdialog';
 
 const Component = styled(Box)`
@@ -19,7 +19,7 @@ function messenger() {
       {
         <>
           <Header>
-            <Toolbar></Toolbar>
+         {/* toolbar */}
           </Header>
           <Chatdialog />
         </>
