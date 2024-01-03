@@ -1,11 +1,16 @@
 import React from 'react'
-
+import Chatheader from './Chatheader'
+import Chatmessage from './Chatmessage'
+import Chatfooter from './Chatfooter'
+import { Box } from '@mui/material';
 
 function ChatBox() {
   return (
-    <div>
-       This is chat Box
-    </div>
+   <Box>
+    <Chatheader/>
+    <Chatmessage/>
+    <Chatfooter/>
+   </Box>
   )
 }
 

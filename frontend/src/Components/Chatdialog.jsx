@@ -2,7 +2,8 @@ import React from 'react'
 import { Dialog, styled, Box } from '@mui/material';
 // import Conversation from './Conversation';
 import Conversation from './leftpart/Conversation';
-import EmptyChat from './rightpart/emptychat';
+// import EmptyChat from './rightpart/emptychat';
+import ChatBox from './rightpart/ChatBox';
 
 // components
 // import Menu from './menu/Menu';
@@ -51,7 +52,8 @@ function Chatdialog() {
                 </LeftComponent>
 
                 <RightComponent>
-                    <EmptyChat/>
+                    {/* <EmptyChat/> */}
+                    <ChatBox/>
                 </RightComponent>
                 
             </Component>
