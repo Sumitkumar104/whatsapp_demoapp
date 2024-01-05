@@ -5,7 +5,7 @@ export const AccountContext = createContext(null);
 
 const AccountProvider = ({children}) => {
 
-    const [ account, setAccount ] = useState();
+    const [ account, setAccount ] = useState();   // account contain the data of user who login .
     const [showloginButton, setShowloginButton] = useState(true);
     const [showlogoutButton, setShowlogoutButton] = useState(false);
 

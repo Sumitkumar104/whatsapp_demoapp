@@ -1,7 +1,7 @@
 import React from 'react'
 import { Dialog, styled, Box } from '@mui/material';
 // import Conversation from './Conversation';
-import Conversation from './leftpart/Conversation';
+import Conversation from './leftpart/Conversations';
 // import EmptyChat from './rightpart/emptychat';
 import ChatBox from './rightpart/ChatBox';
 

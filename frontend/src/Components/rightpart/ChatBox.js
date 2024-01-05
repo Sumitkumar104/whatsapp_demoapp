@@ -1,15 +1,19 @@
 import React from 'react'
 import Chatheader from './Chatheader'
 import Chatmessage from './Chatmessage'
-import Chatfooter from './Chatfooter'
 import { Box } from '@mui/material';
+import { UserContext } from '../Contextapi/Userprovider';
+import { useContext } from 'react';
+
+
 
 function ChatBox() {
+
+  const { person } = useContext(UserContext);   // here
   return (
    <Box>
-    <Chatheader/>
-    <Chatmessage/>
-    <Chatfooter/>
+    <Chatheader person={person}/>
+    <Chatmessage person={person} />
    </Box>
   )
 }

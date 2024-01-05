@@ -1,8 +1,5 @@
 
 import { Box, styled, Typography, Divider } from '@mui/material';
-
-// import { emptyChatImage } from '../../../constants/data';
-
 const Component = styled(Box)`
     background: #f8f9fa;
     padding: 30px 0;
@@ -38,13 +35,13 @@ const StyledDivider = styled(Divider)`
     margin: 40px 0;
     opacity: 0.4;
 `;
-
+const imageurl="https://i.gadgets360cdn.com/large/whatsapp_multi_device_support_update_image_1636207150180.jpg";
 const EmptyChat = () => {
     
     return (
         <Component>
             <Container>
-                <Image src="" alt="empty" />
+                <Image src={imageurl} alt="empty" />
                 <Title>WhatsApp Web</Title>
                 <SubTitle>Now send and receive messages without keeping your phone online.</SubTitle>
                 <SubTitle>Use WhatsApp on up to 4 linked devices and 1 phone at the same time. </SubTitle>
@@ -52,6 +49,6 @@ const EmptyChat = () => {
             </Container>
         </Component>
     )
-}
 
+}
 export default EmptyChat;
