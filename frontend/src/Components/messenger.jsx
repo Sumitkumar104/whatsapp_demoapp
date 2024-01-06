@@ -19,7 +19,7 @@ function messenger() {
       {
         <>
           <Header>
-         {/* toolbar */}
+         <h1>this is messenger header</h1>
           </Header>
           <Chatdialog />
         </>

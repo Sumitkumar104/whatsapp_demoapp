@@ -1,9 +1,10 @@
-import React from 'react'
+// import React, { useContext } from 'react'
 import { Dialog, styled, Box } from '@mui/material';
-// import Conversation from './Conversation';
+
 import Conversation from './leftpart/Conversations';
 // import EmptyChat from './rightpart/emptychat';
-import ChatBox from './rightpart/ChatBox';
+import ChatBox from './rightpart/Chatbox/ChatBox';
+// import { UserContext } from './Contextapi/Userprovider';
 
 // components
 // import Menu from './menu/Menu';
@@ -36,9 +37,12 @@ const dialogStyle = {
     overflow: 'hidden'
 };
 
-function Chatdialog() {
 
-    // const {person}={};
+
+
+function Chatdialog() {
+    // const { person } = useContext(UserContext);
+
     return (
         <Dialog
             open={true}
@@ -47,15 +51,20 @@ function Chatdialog() {
             maxWidth={'md'}
         >
             <Component>
-                <LeftComponent>                 
-                    <Conversation/>
+
+                {/* left part */}
+                <LeftComponent>
+                    <Conversation />
                 </LeftComponent>
 
+                {/* right part */}
                 <RightComponent>
-                    {/* <EmptyChat/> */}
-                    <ChatBox/>
+                    {/* {
+                      Object.keys(person).length ? <ChatBox/> : <EmptyChat />
+                  } */}
+                    <ChatBox />
                 </RightComponent>
-                
+
             </Component>
         </Dialog>
 
